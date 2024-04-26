@@ -1,5 +1,5 @@
 const express = require('express')
-const QueriesRoutes = require('./routes/crudRoutes') 
+const QueriesRoutes = require('../routes/crudRoutes') 
 require('dotenv').config()
 
 const app = express()
