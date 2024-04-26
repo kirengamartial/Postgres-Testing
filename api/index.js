@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.use('/api/v1', QueriesRoutes)
 app.use('/',(req, res) => {
-    res.send('Api is running really well')
+    res.send('Api is running...')
 })
 
 app.listen(4000, () => console.log('app is listening on port 4000'))
