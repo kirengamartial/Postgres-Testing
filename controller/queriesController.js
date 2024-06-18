@@ -3,7 +3,7 @@ const queries = require('../queries/queriy')
 
 const getUsers = (req, res) => {
 db.query(queries.getUsers,(err, results) => {
-    if(err) throw err
+    if(err) res.send(err)
     res.status(200).json(results.rows)
     console.log(results)
 })
